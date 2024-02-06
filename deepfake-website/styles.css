@@ -1,0 +1,134 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Calibri, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+.navbar {
+    background-color: #fffefe;
+    height: 5rem;
+    width: 100vw;
+    margin: 0 auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    top: 0;
+    z-index: 3;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navdiv{
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+}
+
+.logo a{
+    font-size: 35px; 
+    font-weight: 600; 
+    color: #333;
+}
+li{
+    list-style: none; 
+    display: inline-block;
+    text-decoration: none;
+}
+li a{
+    color: #333; 
+    font-size: 18px; 
+    font-weight: bold; 
+    margin-right: 25px;
+    text-decoration: none;
+}
+.navdiv button{
+    background-color: #097cf8f5; 
+    margin-left: 10px;
+    margin-top: 10px; 
+    margin-right: 20px;
+    border-radius: 20px; 
+    padding: 10px; 
+    width: 90px;
+    height: 55px;
+}
+.navdiv button a{
+    color: #fffdfd; 
+    font-weight: bold; 
+    font-size: 15px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.actions li a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 800px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.container p {
+    font-size: 18px;
+    color: #666;
+    margin-top: 15px;
+    margin-bottom: 24px;
+}
+
+.upload-container {
+    margin-top: 40px;
+}
+
+#videoFileInput {
+    display: none;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 29px;
+    font-weight: 400;
+    cursor: pointer;
+    height: 80px;
+    width: 330px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.upload-video{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.upload-video span{
+    padding: 15px;
+    color: #4d4c4c;
+    font-size: larger;
+}
+
+.result-container {
+    margin-top: 20px;
+}
+
+.result-text {
+    font-size: 18px;
+    color: #333;
+}
