@@ -73,8 +73,8 @@ li a{
 
 .container {
     max-width: 800px;
-    margin: 60px auto;
-    padding: 15px;
+    margin: 56px auto;
+    padding: 14px;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -109,7 +109,7 @@ button {
     font-size: 29px;
     font-weight: 400;
     cursor: pointer;
-    height: 80px;
+    height: 79px;
     width: 330px;
     text-decoration: none;
 }
@@ -132,7 +132,7 @@ button:hover {
 }
 
 .result-container {
-    margin-top: 20px;
+    margin-top: 19px;
 }
 
 .result-text {
@@ -140,14 +140,14 @@ button:hover {
     color: #333;
 }
 .drop-area{
-    padding: 90px;
+    padding: 80px;
     border: 2px dashed grey;
 }
 
 footer {
     color: #0b0b0b;
     text-align: center;
-    padding: 20px 0;
+    padding: 18px 0;
     bottom: 0;
     width: 100%;
     box-shadow: 0px -5px 15px rgba(0, 0, 0, 0.075);
