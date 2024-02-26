@@ -118,6 +118,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const options = document.querySelectorAll("#search-select option");
   const container = document.getElementsByClassName("container")[0]; // Select the first element with class "container"
   const searchSelect = document.getElementById("search-select");
+  const dropdown = document.getElementById("search-select");
 
   changeSpan.addEventListener("click", function () {
     const currentMode = changeSpan.textContent.trim();
@@ -139,6 +140,7 @@ document.addEventListener("DOMContentLoaded", function () {
     } else {
       // Switch to light mode
       modeDiv.classList.remove("dark-mode");
+
       document.body.style.backgroundColor = "#fff";
       container.style.backgroundColor = "#f8f8f8";
       heading.style.color = "#000";
