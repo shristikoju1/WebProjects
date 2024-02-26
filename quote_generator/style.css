@@ -1,4 +1,4 @@
-
+/* Reset CSS */
 * {
   margin: 0;
   padding: 0;
@@ -10,6 +10,7 @@ body {
   font-size: 18px;
 }
 
+/* Styles for nav search */
 .nav-search {
   margin-top: 4%;
   margin-left: auto;
@@ -33,7 +34,9 @@ body {
   font-size: 1rem;
   border: none;
   padding: 5px;
+  color: #222;
 }
+
 .search-icon {
   width: 45px;
   display: flex;
@@ -205,18 +208,20 @@ body {
     width: 90%;
   }
 
+  /* Adjust button styles for smaller screens */
   .btn {
     padding: 8px 16px;
     font-size: 14px;
     width: auto;
   }
 
+  /* Adjust mode element styles for smaller screens */
   .mode {
     top: auto;
-    bottom: 10px;
+    bottom: 10px; /* Adjust as needed */
     right: 10px;
     padding: 8px;
-    z-index: 999; 
+    z-index: 999; /* Ensure the mode is above other elements */
   }
 
   .change {
