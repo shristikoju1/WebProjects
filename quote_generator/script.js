@@ -147,7 +147,7 @@ document.addEventListener("DOMContentLoaded", function () {
       dropdown.style.color = "#000";
 
       options.forEach(option => {
-        option.style.color = "#f8f8f8";
+        option.style.color = "#000";
       });
       searchSelect.style.backgroundColor = "#fff"; 
       container.style.backgroundColor = "#fff"; 
