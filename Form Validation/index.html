@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form with Validation</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <form id="myForm" action="/" method="post">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+        <span class="error">Name is required.</span>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <span class="error">Please enter a valid email address.</span>
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$"
+          required
+        />
+        <span class="error">Password must be at least 8 characters long.</span>
+      </div>
+
+      <div class="form-group">
+        <label for="confirm-password">Confirm Password:</label>
+        <input
+          type="password"
+          id="confirm-password"
+          name="confirm-password"
+          pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$"
+          required
+        />
+        <span class="error">Passwords must match.</span>
+      </div>
+
+      <div class="form-group">
+        <label for="birthdate">Birth date:</label>
+        <input type="date" id="birthdate" name="birthdate" required />
+        <span class="error">Birth date is required.</span>
+      </div>
+
+      <div class="form-group">
+        <label for="website">Website:</label>
+        <input type="url" id="website" name="website" />
+        <span class="error">Please enter a valid URL.</span>
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>
