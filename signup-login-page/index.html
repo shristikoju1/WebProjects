@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+</head>
+
+<body>
+    <main class="container">
+        <div class="inside-container">
+            <form action="">
+                <div class="signup-heading">
+                    <h2>Get Started Now !</h2>
+                </div>
+
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" class="input" placeholder="Enter your name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input type="email" id="email" name="email" class="input" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" class="input"
+                        pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$" placeholder="Enter a password" required>
+                </div>
+                <!-- <div class="form-group">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" class="input"
+                        pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$" placeholder="Re-enter the password" required>
+                </div> -->
+
+                <div class="checkbox">
+                    <input type="checkbox" name="agree" value="yes"> I agree to the <a href="#">terms and policy</a>.
+                </div>
+                <div>
+                    <button type="submit">Sign Up</button>
+                </div>
+                <div class="or">Or</div>
+                <div class="signin-with">
+                    <div class="google sign-in">
+                        <img src="./assests/google-icon.png" alt="google">
+                        <p>Sign in with Google</p>
+                    </div>
+                    <div class="apple sign-in">
+                        <i class="fa-brands fa-apple"></i>
+                        <p>Sign in with Apple</p>
+                    </div>
+                </div>
+                <div class="login">
+                    <p>Already have an account? <a href="#">Log in</a></p>
+                </div>
+                <div>
+            </form>
+
+        </div>
+
+        <!-- <div class="signup-separator"></div> -->
+
+
+        <div class="img-wrapper">
+            <img src="./assests/sign-up.jpg" alt="img">
+        </div>
+
+    </main>
+
+    <main class="login-page">
+        <div class="login-container">
+            <div class="login-heading">
+                <h2>Welcome Back !</h2>
+                <p>Your presence makes us better. Let's continue where we left off.</p>
+            </div>
+            <div class="form-wrapper">
+                <form action="">
+
+                    <div class="form-group login-input">
+                        <label for="email">Name</label>
+                        <input type="email" id="email" name="email" class="input" placeholder="Enter your email"
+                            required>
+                    </div>
+
+                    <div class="form-group login-input">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" class="input"
+                            placeholder="Enter your password" required>
+                    </div>
+
+                    <div>
+                        <button type="submit" class="login-btn login-input">
+                            <span>Login to your account</span>
+                            <i class="fa-solid fa-arrow-right-long"></i>
+                        </button>
+                    </div>
+
+                    <p>Don't have an account yet? <a href="#">Sign up</a></p>
+                </form>
+                <div class="form-separator"></div>
+                <div class="social-media">
+                    <div class="google login-social-media">
+                        <img src="./assests/google-icon.png" alt="google">
+                        <p>Sign in with Google</p>
+                    </div>
+                    <div class="facebook login-social-media">
+                        <i class="fa-brands fa-facebook"></i>
+                        <p>Sign in with Facebook</p>
+                    </div>
+                    <div class="apple login-social-media">
+                        <i class="fa-brands fa-apple"></i>
+                        <p>Sign in with Apple</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="forgot-password">
+                <a href="#">Forgot Password?</a>
+            </div>
+
+        </div>
+    </main>
+
+</body>
+<script id="live-server-script" src="http://localhost:5500/livereload.js"></script>
+
+</html>
